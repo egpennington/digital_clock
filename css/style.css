@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #10101e;
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+.datetime {
+  color: #fff;
+  background: #10101e;
+  font-family: "Segoe UI", sans-serif;
+  width: 368px;
+  padding: 15px 40px;
+  border: solid 3px #2e94e3;
+  border-radius: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255,255,255, 0.1));
+}
+
+.datetime:hover {
+  background: #2e94e3;
+  box-shadow: 0 0 30px #2e94e3;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time {
+  font-size: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time div:not(:last-child) {
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.seconds-display {
+  background: #2e94e3;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
