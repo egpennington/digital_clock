@@ -18,8 +18,8 @@ body {
   color: #fff;
   background: #10101e;
   font-family: "Segoe UI", sans-serif;
-  width: 368px;
-  padding: 15px 40px;
+  width: 469px;
+  padding: 25px 20px;
   border: solid 3px #2e94e3;
   border-radius: 5px;
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255,255,255, 0.1));
@@ -39,24 +39,29 @@ body {
 
 .time {
   font-size: 3.75rem;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
-.time div:not(:last-child) {
-  position: relative;
-  margin: 0 6px;
-  font-weight: 600;
+.time div {
+  min-width: 100px;
   text-align: center;
 }
 
-.seconds-display {
+.time div:not(:last-child) {
+  position: relative;
+  /* margin: 0 6px; */
+  font-weight: 600;
+  /* text-align: center; */
+}
+
+.period-display {
   background: #2e94e3;
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 10px;
-  padding: 0 5px;
+  margin-right: 15px;
+  padding: 10px;
   border-radius: 3px;
 }

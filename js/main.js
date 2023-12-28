@@ -7,14 +7,14 @@ function updateClock() {
       hou = now.getHours(),
       min = now.getMinutes(),
       sec = now.getSeconds(),
-      pe = "AM"
+      pe = "오전"
       
       if(hou === 0) {
         hou = 12
       }
       if(hou > 12) {
         hou = hou - 12
-        pe = "PM"
+        pe = "오후"
       }
       
     Number.prototype.pad = function(digits) {
