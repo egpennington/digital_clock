@@ -12,7 +12,12 @@ body {
   background: #10101e;
   transition: 0.5s;
   transition-property: background, box-shadow;
+  display: flex;
+  flex-direction: column;
 }
+
+.txt-white { color: #fff; }
+.txt-sm { font-size: 0.9; }
 
 .datetime {
   color: #fff;
